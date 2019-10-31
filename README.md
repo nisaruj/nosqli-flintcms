@@ -10,6 +10,8 @@ The vulnerability was originally discovered by Benoit Côté-Jodoin. You can rea
 docker-compose
 ```
 
+**Limitation**: We removed `sendEmail` function so that the server cannot send an email. However, it can still generate a token when password is reset.
+
 ## Lab Setup
 
 1. The environment variables are in `docker-compose.yml` you can change database's credential here.

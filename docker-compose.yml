@@ -18,6 +18,7 @@ services:
       - ./flintapp/public:/usr/src/app/public
       - ./flintapp/scss:/usr/src/app/scss
       - ./flintapp/index.js:/usr/src/app/index.js
+      - ./flintapp/patchSendEmail.js:/usr/src/app/node_modules/flintcms/server/utils/emails/sendEmail.js
     links:
       - mongo
     environment:
