@@ -1,5 +1,9 @@
 FROM node:8-alpine
 
+ENV NODE_TLS_REJECT_UNAUTHORIZED=0
+RUN apk add --update python make g++\
+   && rm -rf /var/cache/apk/*
+
 WORKDIR /usr/src/app
 
 COPY package*.json ./
